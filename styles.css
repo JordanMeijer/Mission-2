@@ -1,0 +1,105 @@
+*:: after,  *::before {
+    box-sizing: border-box;
+}
+
+:root {
+    --cell-size: 100px;
+    --mark-size: calc(var(--cell-size) * .9);
+}
+    
+body {
+    margin: 0;    
+}
+
+.board {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    grid-template-columns: repeat(10 , auto);
+}
+
+.cell:not(.cell.columnEight,.cell.columnNine, .cell.columnTen) 
+    {
+    width: var(--cell-size);
+    height: var(--cell-size);
+    border:1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.cell.red {
+    background-color: red;
+}
+
+.cell.yellow {
+    background-color: yellow;
+}
+
+.board.red .cell.columnOne:hover,
+.board.red .cell.columnTwo:hover,
+.board.red .cell.columnThree:hover,
+.board.red .cell.columnFour:hover,
+.board.red .cell.columnFive:hover,
+.board.red .cell.columnSix:hover,
+.board.red .cell.columnSeven:hover {
+    background-color: orangered;
+}
+
+.board.yellow .cell.columnOne:hover,
+.board.yellow .cell.columnTwo:hover,
+.board.yellow .cell.columnThree:hover,
+.board.yellow .cell.columnFour:hover,
+.board.yellow .cell.columnFive:hover,
+.board.yellow .cell.columnSix:hover,
+.board.yellow .cell.columnSeven:hover {
+    background-color: lightyellow;
+}
+
+.cell.red,
+.cell.yellow {
+    cursor: not-allowed;
+}
+
+.winning-message {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .9);
+    
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 5rem;
+    flex-direction: column;
+}
+.winning-message button {
+    font-size: 3rem;
+    background-color: white;
+    border: 1px solid black;
+    padding: .25rem .5rem;
+    cursor: pointer;
+}
+
+.winning-message button:hover {
+    background-color: black;
+    color: white;
+    border-color: white;
+}
+
+.winning-message.show {
+    display: flex;
+
+}
+
+.winning-message.show {
+    display: flex;
+}

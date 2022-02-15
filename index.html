@@ -1,0 +1,102 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>s
+    <script src="ifstatements.js"></script>
+</head>
+<body>
+    <p>wasd</p>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <!-- Here we load jQuery into our webpage -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script> 
+    <!-- Defer makes the script load after the HTML -->
+    <script src="app.js" defer></script>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link href="styles.css" rel="stylesheet" >
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Let's Play Connect 4!</h1>
+    </header>
+    <div class="board yellow" id="board">
+        <div class="cell columnOne " data-cell>1</div>
+        <div class="cell columnTwo " data-cell>2</div>
+        <div class="cell columnThree " data-cell>3</div>
+        <div class="cell columnFour "data-cell></div>
+        <div class="cell columnFive" data-cell></div>
+        <div class="cell columnSix" data-cell></div>
+        <div class="cell columnSeven" data-cell></div>
+        <div class="cell columnEight"></div>
+        <div class="cell columnNine"></div>
+        <div class="cell columnTen"></div>
+        <div class="cell columnOne" data-cell>11</div>
+        <div class="cell columnTwo" data-cell>12</div>
+        <div class="cell columnThree" data-cell>13</div>
+        <div class="cell columnFour" data-cell></div>
+        <div class="cell columnFive" data-cell></div>
+        <div class="cell columnSix" data-cell></div>
+        <div class="cell columnSeven" data-cell></div>
+        <div class="cell columnEight"></div>
+        <div class="cell columnNine"></div>
+        <div class="cell columnTen"></div>
+        <div class="cell columnOne" data-cell></div>
+        <div class="cell columnTwo" data-cell></div>
+        <div class="cell columnThree" data-cell></div>
+        <div class="cell columnFour" data-cell></div>
+        <div class="cell columnFive" data-cell></div>
+        <div class="cell columnSix" data-cell></div>
+        <div class="cell columnSeven" data-cell></div>
+        <div class="cell columnEight"></div>
+        <div class="cell columnNine"></div>
+        <div class="cell columnTen"></div>
+        <div class="cell columnOne" data-cell></div>
+        <div class="cell columnTwo" data-cell></div>
+        <div class="cell columnThree" data-cell></div>
+        <div class="cell columnFour" data-cell></div>
+        <div class="cell columnFive" data-cell></div>
+        <div class="cell columnSix" data-cell></div>
+        <div class="cell columnSeven" data-cell></div>
+        <div class="cell columnEight"></div>
+        <div class="cell columnNine"></div>
+        <div class="cell columnTen"></div>
+        <div class="cell columnOne" data-cell></div>
+        <div class="cell columnTwo" data-cell></div>
+        <div class="cell columnThree" data-cell></div>
+        <div class="cell columnFour" data-cell></div>
+        <div class="cell columnFive" data-cell></div>
+        <div class="cell columnSix" data-cell></div>
+        <div class="cell columnSeven" data-cell></div>
+        <div class="cell columnEight"></div>
+        <div class="cell columnNine"></div>
+        <div class="cell columnTen"></div>
+        <div class="cell columnOne" data-cell></div>
+        <div class="cell columnTwo" data-cell></div>
+        <div class="cell columnThree" data-cell></div>
+        <div class="cell columnFour" data-cell></div>
+        <div class="cell columnFive" data-cell></div>
+        <div class="cell columnSix" data-cell></div>
+        <div class="cell columnSeven" data-cell></div>
+        <div class="cell columnEight"></div>
+        <div class="cell columnNine"></div>
+        <div class="cell columnTen"></div>
+    </div>
+    <div class="winning-message" id="winningMessage">
+        <div data-winning-message-text></div>
+        <button id="restartButton">Restart</button>
+    </div>
+</body>
+
+</html>
